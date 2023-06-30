@@ -1,0 +1,27 @@
+<view class="page">
+  <view class="avatar">
+    <button open-type="chooseAvatar" bindchooseavatar="onAvatarChanged">
+      <image src="{{headUrl}}" />
+    </button>
+  </view>
+  <view class="weui-cells">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">昵称</view>
+      <view class="weui-cell__bd">
+        <input model:value="{{nickName}}" type="nickname" class="weui-input" placeholder="起个好听的名字..." confirm-type="next" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">性别</view>
+      <view class="weui-cell__bd" bindtap="onSexChange">{{sexStr}}</view>
+    </view>
+  </view>
+  <mp-cells title="个性签名">
+    <textarea model:value="{{bio}}" placeholder="为自己好好的吹一次..."></textarea>
+  </mp-cells>
+  <view class="footer">
+    <button class="weui-btn" disabled="{{!nickName}}" form-type="submit" type="primary" bindtap="onModify">
+      更新资料
+    </button>
+  </view>
+</view>

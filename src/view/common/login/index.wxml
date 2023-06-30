@@ -1,0 +1,31 @@
+<view class="page">
+  <mp-form-page title="请先登录" subtitle="请先完成登录后操作">
+    <mp-form>
+      <view class="weui-cells">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <input focus model:value="{{account}}" type="email" class="weui-input" placeholder="邮箱/账号/ID..." confirm-type="next" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <input class="weui-input" model:value="{{password}}" type="password" placeholder="登录密码..." confirm-type="done" />
+          </view>
+        </view>
+      </view>
+    </mp-form>
+    <view slot="button">
+      <button class="weui-btn" disabled="{{!account||!password}}" form-type="submit" type="primary" bindtap="onLogin">
+        登录系统
+      </button>
+    </view>
+  </mp-form-page>
+  <view class="bottom">
+    <label class="weui-agree">
+      <view class="weui-agree__text">
+        <navigator url="../register/index" class="weui-agree__link">注册账号</navigator>
+        <navigator url="../forget/index" class="weui-agree__link">忘记密码</navigator>
+      </view>
+    </label>
+  </view>
+</view>

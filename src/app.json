@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "view/index/index",
+    "view/common/login/index",
+    "view/common/forget/index",
+    "view/common/profile/index",
+    "view/common/register/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f5f5f5",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "backgroundColorTop": "#f5f5f5",
+    "backgroundColorBottom": "#f5f5f5"
+  },
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

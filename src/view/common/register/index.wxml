@@ -1,0 +1,31 @@
+<view class="page">
+  <mp-form-page title="注册账号" subtitle="注册一个账号即可畅游所有服务">
+    <mp-form>
+      <view class="weui-cells">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <input focus model:value="{{email}}" type="email" class="weui-input" placeholder="注册时的邮箱地址..." confirm-type="next" />
+          </view>
+          <view class="weui-cell__hd">
+            <button size="mini" bindtap="onSendEmailCode" disabled="{{!email}}">发送验证码</button>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <input class="weui-input" model:value="{{code}}" type="number" placeholder="收到的验证码..." confirm-type="done" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <input class="weui-input" model:value="{{password}}" type="password" placeholder="设置一个登录密码..." confirm-type="done" />
+          </view>
+        </view>
+      </view>
+    </mp-form>
+    <view slot="button">
+      <button class="weui-btn" disabled="{{!email||!code||!password}}" form-type="submit" type="primary" bindtap="onRegister">
+        注册账号
+      </button>
+    </view>
+  </mp-form-page>
+</view>
