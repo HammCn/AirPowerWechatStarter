@@ -1,3 +1,3 @@
 [submodule "src/airpower"]
 	path = src/airpower
-	url = git@e.coding.net:airpower/airpower/airpower.git
+	url = git@github.com:HammCn/airpower.git
