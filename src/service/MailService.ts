@@ -1,11 +1,8 @@
 import { AirAbstractService } from '../airpower/base/AirAbstractService'
-import { AirEntity } from '../airpower/base/AirEntity'
 import { MailSendDto } from '../model/dto/common/MailSendDto'
 
-export class MailService extends AirAbstractService<AirEntity> {
+export class MailService extends AirAbstractService {
   baseUrl = 'mail'
-
-  entityClass = AirEntity
 
   /**
    * 发送验证码
