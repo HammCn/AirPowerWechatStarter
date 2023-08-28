@@ -14,14 +14,14 @@
 ```shell
 git clone git@github.com:HammCn/AirPowerWechatStarter.git &&
 cd AirPowerWechatStarter/src && 
-git clone git@github.com:HammCn/AirPower4T.git airpower && cd ../
+git clone -b wechat git@github.com:HammCn/AirPower4T.git airpower && cd ../
 ```
 
 - https方式
 ```shell
 git clone https://github.com/HammCn/AirPowerWechatStarter.git &&
 cd AirPowerWechatStarter/src && 
-git clone https://github.com/HammCn/AirPower4T.git airpower && cd ../
+git clone -b wechat https://github.com/HammCn/AirPower4T.git airpower && cd ../
 ```
 
 ### 二、修改环境变量
