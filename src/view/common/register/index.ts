@@ -13,7 +13,7 @@ Page({
     wx.hideHomeButton()
   },
   async onRegister() {
-    const dto = RegisterDto.fromJson(this.data)
+    const dto = RegisterDto.newInstance(this.data)
     dto.account = this.data.email
     dto.nickName = '新用户'
     await UserService.create('注册中').register(dto)
@@ -25,7 +25,7 @@ Page({
     wx.navigateBack()
   },
   async onSendEmailCode() {
-    const dto = MailSendDto.fromJson(this.data)
+    const dto = MailSendDto.newInstance(this.data)
     await MailService.create('发送中').sendEmailCode(dto)
     wx.showToast({
       title: '发送成功',

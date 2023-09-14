@@ -13,7 +13,7 @@ Page({
     wx.hideHomeButton()
   },
   async onResetPassword() {
-    const dto = ResetPasswordDto.fromJson(this.data)
+    const dto = ResetPasswordDto.newInstance(this.data)
     dto.account = this.data.email
     await UserService.create('重置中').resetPassword(dto)
     await wx.showModal({
@@ -24,7 +24,7 @@ Page({
     wx.navigateBack()
   },
   async onSendEmailCode() {
-    const dto = MailSendDto.fromJson(this.data)
+    const dto = MailSendDto.newInstance(this.data)
     await MailService.create('发送中').sendEmailCode(dto)
     wx.showToast({
       title: '发送成功',

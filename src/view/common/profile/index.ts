@@ -48,7 +48,7 @@ Page({
     })
   },
   async onModify() {
-    const user = UserEntity.fromJson(this.data)
+    const user = UserEntity.newInstance(this.data)
     console.log(user)
     await UserService.create('保存中').updateMyInfo(user)
     wx.navigateBack()

@@ -15,7 +15,7 @@ Page({
   },
 
   async onLogin() {
-    const user = UserEntity.fromJson(this.data)
+    const user = UserEntity.newInstance(this.data)
     const accessToken = await UserService.create('登录中').login(user)
     AirConfig.saveAccessToken(accessToken)
     AirRouter.back()
