@@ -1,3 +1,4 @@
+import { AirAlert } from '../../../airpower/feedback/AirAlert'
 import { MailSendDto } from '../../../model/dto/common/MailSendDto'
 import { RegisterDto } from '../../../model/dto/common/RegisterDto'
 import { MailService } from '../../../service/MailService'
@@ -17,11 +18,7 @@ Page({
     dto.account = this.data.email
     dto.nickName = '新用户'
     await UserService.create('注册中').register(dto)
-    await wx.showModal({
-      title: '注册成功',
-      content: '账号注册成功, 请妥善保管你的登录密码',
-      showCancel: false,
-    })
+    await AirAlert.show('账号注册成功, 请妥善保管你的登录密码',"注册成功")
     wx.navigateBack()
   },
   async onSendEmailCode() {
