@@ -8,23 +8,13 @@
 
 > 建议windows开发者使用 ```git bash``` 不要使用windows自带的拉垮的 ```cmd``` ```powershell``` 等。否则接下来的脚本可能出现问题，你只能通过自己手动去操作。
 
-任选一个方式的脚本一键初始化项目
-
-- ssh方式
-```shell
-git clone git@github.com:HammCn/AirPowerWechatStarter.git &&
-cd AirPowerWechatStarter/src && 
-git clone -b wechat git@github.com:HammCn/AirPower4T.git airpower && cd ../
-```
-
-- https方式
 ```shell
 git clone https://github.com/HammCn/AirPowerWechatStarter.git &&
 cd AirPowerWechatStarter/src && 
 git clone -b wechat https://github.com/HammCn/AirPower4T.git airpower && cd ../
 ```
 
-### 二、修改环境变量
+### 二、修改基础配置
 
 按需修改配置
 ```conf
