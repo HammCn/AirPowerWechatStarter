@@ -24,7 +24,6 @@ App<IAppOption>({
     AirConfig.staticUrl = "" // 静态资源地址
   },
 })
-
 ```
 
 ### 三、启动和打包
