@@ -1,0 +1,11 @@
+{
+	"ios": {
+		"name": "AirPower"
+	},
+	"android": {
+		"name": "AirPower"
+	},
+	"common": {
+		"name": "AirPower"
+	}
+}

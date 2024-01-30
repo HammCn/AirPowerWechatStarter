@@ -1,16 +1,20 @@
 {
   "pages": [
-    "view/index/index",
+    "view/tabbar/index",
+    "view/tabbar/index2",
     "view/common/login/index",
     "view/common/forget/index",
     "view/common/profile/index",
     "view/common/register/index"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#f5f5f5",
-    "navigationBarTitleText": "",
-    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#48af6e",
+    "navigationBarTitleText": "AirPower",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "default",
+    "backgroundColor": "#f5f5f5",
+    "backgroundColorContent": "#f5f5f5",
     "backgroundColorTop": "#f5f5f5",
     "backgroundColorBottom": "#f5f5f5"
   },
@@ -18,5 +22,25 @@
   "useExtendedLib": {
     "weui": true
   },
-  "sitemapLocation": "sitemap.json"
+  "tabBar": {
+    "custom": true,
+    "list": [{
+      "pagePath": "view/tabbar/index",
+      "text": "首页"
+    }, {
+      "pagePath": "view/tabbar/index2",
+      "text": "日志"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "miniApp": {
+    "useAuthorizePage": true
+  },
+  "usingComponents": {
+    "a-body": "airpower/components/body",
+    "mp-cells": "weui-miniprogram/cells/cells",
+    "mp-cell": "weui-miniprogram/cell/cell",
+    "mp-form-page": "weui-miniprogram/form-page/form-page",
+    "mp-form": "weui-miniprogram/form/form"
+  }
 }

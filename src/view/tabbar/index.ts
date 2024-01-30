@@ -5,24 +5,33 @@ Page({
   data: {
     currentUserInfo: new UserEntity(),
   },
+  onPullDownRefresh() {
+    wx.stopPullDownRefresh()
+  },
   onGoToProfile() {
     wx.navigateTo({
       url: '../common/profile/index',
     })
   },
-  async onShow() {
-    try {
-      const user = await UserService.create().getMyInfo(true)
-      this.setData({
-        currentUserInfo: user,
-      })
-    } catch (e) {
-      const user = new UserEntity()
-      user.nickName = '游客'
-      this.setData({
-        currentUserInfo: user,
-      })
-    }
+  onShow() {
+    this.getTabBar().setData({
+      selected: 0
+    })
+    setTimeout(async () => {
+      console.log(123);
+      try {
+        const user = await UserService.create().getMyInfo(true)
+        this.setData({
+          currentUserInfo: user,
+        })
+      } catch (e) {
+        const user = new UserEntity()
+        user.nickName = '游客'
+        this.setData({
+          currentUserInfo: user,
+        })
+      }
+    }, 10)
   },
   async onScanQrcode() {
     const res = await wx.scanCode({

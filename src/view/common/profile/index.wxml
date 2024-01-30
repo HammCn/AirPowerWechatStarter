@@ -1,14 +1,14 @@
 <view class="page">
   <view class="avatar">
-    <button open-type="chooseAvatar" bindchooseavatar="onAvatarChanged">
+    <!-- <button open-type="chooseAvatar" bindchooseavatar="onAvatarChanged"> -->
       <image src="{{headUrl}}" />
-    </button>
+    <!-- </button> -->
   </view>
   <view class="weui-cells">
     <view class="weui-cell weui-cell_input">
       <view class="weui-cell__hd">昵称</view>
       <view class="weui-cell__bd">
-        <input model:value="{{nickName}}" type="nickname" class="weui-input" placeholder="起个好听的名字..." confirm-type="next" />
+        <input model:value="{{nickName}}" class="weui-input" placeholder="起个好听的名字..."/>
       </view>
     </view>
     <view class="weui-cell weui-cell_input">
