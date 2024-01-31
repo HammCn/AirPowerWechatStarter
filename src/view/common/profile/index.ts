@@ -2,9 +2,9 @@ import { WechatEvent } from '../../../../typings/types'
 import { AirConfig } from '../../../airpower/config/AirConfig'
 import { AirFile } from '../../../airpower/helper/AirFile'
 import { AirHttp } from '../../../airpower/helper/AirHttp'
-import { UserEntity } from '../../../model/entity/UserEntity'
-import { UserSexDictionary } from '../../../model/dictionary/UserSexDictionary'
-import { UserService } from '../../../service/UserService'
+import { UserEntity } from '../../../model/role/UserEntity'
+import { UserService } from '../../../model/user/UserService'
+import { UserSexDictionary } from '../../../model/user/UserSexDictionary'
 
 
 Page({

@@ -1,5 +1,5 @@
 import { AirDictionaryArray } from '../../airpower/model/extend/AirDictionaryArray'
-import { UserSex } from '../enum/UserSex'
+import { UserSex } from './UserSex'
 
 /**
  * 用户性别字典

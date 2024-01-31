@@ -1,8 +1,8 @@
 import { AirAlert } from '../../../airpower/feedback/AirAlert'
-import { MailSendDto } from '../../../model/dto/common/MailSendDto'
-import { RegisterDto } from '../../../model/dto/common/RegisterDto'
-import { MailService } from '../../../service/MailService'
-import { UserService } from '../../../service/UserService'
+import { MailSendDto } from '../../../model/mail/MailSendDto'
+import { MailService } from '../../../model/mail/MailService'
+import { RegisterDto } from '../../../model/user/RegisterDto'
+import { UserService } from '../../../model/user/UserService'
 
 Page({
   data: {

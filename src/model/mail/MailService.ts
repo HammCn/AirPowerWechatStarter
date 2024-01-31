@@ -1,5 +1,5 @@
-import { AirAbstractService } from '../airpower/base/AirAbstractService'
-import { MailSendDto } from '../model/dto/common/MailSendDto'
+import { AirAbstractService } from '../../airpower/base/AirAbstractService'
+import { MailSendDto } from './MailSendDto'
 
 export class MailService extends AirAbstractService {
   baseUrl = 'mail'

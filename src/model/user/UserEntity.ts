@@ -2,9 +2,9 @@ import {
   ClassName, Dictionary, Type,
 } from '../../airpower/decorator/Custom'
 import { BaseEntity } from '../../base/BaseEntity'
-import { UserSex } from '../enum/UserSex'
-import { UserSexDictionary } from '../dictionary/UserSexDictionary'
-import { RoleEntity } from './RoleEntity'
+import { UserSexDictionary } from './UserSexDictionary'
+import { RoleEntity } from '../role/RoleEntity'
+import { UserSex } from './UserSex'
 
 @ClassName('用户')
 export class UserEntity extends BaseEntity {

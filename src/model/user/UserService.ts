@@ -1,7 +1,7 @@
-import { AbstractBaseService } from '../base/AbstractBaseService'
-import { RegisterDto } from '../model/dto/common/RegisterDto'
-import { ResetPasswordDto } from '../model/dto/common/ResetPasswordDto'
-import { UserEntity } from '../model/entity/UserEntity'
+import { AbstractBaseService } from '../../base/AbstractBaseService'
+import { RegisterDto } from './RegisterDto'
+import { ResetPasswordDto } from './ResetPasswordDto'
+import { UserEntity } from './UserEntity'
 
 /**
  * 用户相关接口

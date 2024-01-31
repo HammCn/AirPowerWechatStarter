@@ -1,6 +1,6 @@
 import { IJson } from "../../airpower/interface/IJson"
-import { UserEntity } from "../../model/entity/UserEntity"
-import { UserService } from "../../service/UserService"
+import { UserEntity } from "../../model/role/UserEntity"
+import { UserService } from "../../model/user/UserService"
 
 
 Page({

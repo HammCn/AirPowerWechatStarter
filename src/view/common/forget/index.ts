@@ -1,8 +1,8 @@
 import { AirAlert } from '../../../airpower/feedback/AirAlert'
-import { MailSendDto } from '../../../model/dto/common/MailSendDto'
-import { ResetPasswordDto } from '../../../model/dto/common/ResetPasswordDto'
-import { MailService } from '../../../service/MailService'
-import { UserService } from '../../../service/UserService'
+import { MailSendDto } from '../../../model/mail/MailSendDto'
+import { MailService } from '../../../model/mail/MailService'
+import { ResetPasswordDto } from '../../../model/user/ResetPasswordDto'
+import { UserService } from '../../../model/user/UserService'
 
 Page({
   data: {
