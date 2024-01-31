@@ -1,4 +1,4 @@
-<view class="page">
+<a-body>
   <mp-form-page title="请先登录" subtitle="请先完成登录后操作">
     <mp-form>
       <view class="weui-cells">
@@ -28,4 +28,4 @@
       </view>
     </label>
   </view>
-</view>
+</a-body>

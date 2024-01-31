@@ -1,0 +1,15 @@
+<a-body tabbar>
+  <block wx:if="{{tabbarIndex===0}}">
+    <mp-cells title="个人信息">
+      <mp-cell bindtap="onGoToProfile" link="true" value="{{currentUserInfo.nickName}}" footer=""></mp-cell>
+      <mp-cell>
+        <view>1</view>
+        <view slot="footer">2212123123123212</view>
+      </mp-cell>
+    </mp-cells>
+    <mp-cells title="其他功能">
+      <mp-cell link="true" value="啊啊啊123" footer="" bindtap="onScanQrcode"></mp-cell>
+    </mp-cells>
+  </block>
+  <a-tabbar data="{{tabbar}}" bind:changeTab="changeTab"></a-tabbar>
+</a-body>

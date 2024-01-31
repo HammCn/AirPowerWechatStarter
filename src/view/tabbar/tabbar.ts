@@ -1,9 +1,27 @@
-import { UserEntity } from '../../model/entity/UserEntity'
-import { UserService } from '../../service/UserService'
+import { IJson } from "../../airpower/interface/IJson"
+import { UserEntity } from "../../model/entity/UserEntity"
+import { UserService } from "../../service/UserService"
+
 
 Page({
   data: {
     currentUserInfo: new UserEntity(),
+    tabbarIndex: 0,
+    tabbar: {
+      color: "#666",
+      selectedColor: "#48af6e",
+      list: [{
+        pagePath: "/view/tabbar/index",
+        iconPath: "/assets/images/tabbar/tabbar-home.png",
+        selectedIconPath: "/assets/images/tabbar/tabbar-home-active.png",
+        text: "首页"
+      }, {
+        pagePath: "/view/tabbar/index2",
+        iconPath: "/assets/images/tabbar/tabbar-mine.png",
+        selectedIconPath: "/assets/images/tabbar/tabbar-mine-active.png",
+        text: "我的"
+      }]
+    }
   },
   onPullDownRefresh() {
     wx.stopPullDownRefresh()
@@ -13,12 +31,14 @@ Page({
       url: '../common/profile/index',
     })
   },
-  onShow() {
-    this.getTabBar().setData({
-      selected: 0
+  changeTab(e: IJson) {
+    console.log("tab index " + e.detail)
+    this.setData({
+      tabbarIndex: e.detail
     })
+  },
+  onShow() {
     setTimeout(async () => {
-      console.log(123);
       try {
         const user = await UserService.create().getMyInfo(true)
         this.setData({

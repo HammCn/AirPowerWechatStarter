@@ -1,7 +1,6 @@
 {
   "pages": [
-    "view/tabbar/index",
-    "view/tabbar/index2",
+    "view/tabbar/tabbar",
     "view/common/login/index",
     "view/common/forget/index",
     "view/common/profile/index",
@@ -22,22 +21,14 @@
   "useExtendedLib": {
     "weui": true
   },
-  "tabBar": {
-    "custom": true,
-    "list": [{
-      "pagePath": "view/tabbar/index",
-      "text": "首页"
-    }, {
-      "pagePath": "view/tabbar/index2",
-      "text": "日志"
-    }]
-  },
   "sitemapLocation": "sitemap.json",
   "miniApp": {
     "useAuthorizePage": true
   },
   "usingComponents": {
     "a-body": "airpower/components/body",
+    "a-tabbar": "airpower/components/tabbar",
+    "a-footer": "airpower/components/footer",
     "mp-cells": "weui-miniprogram/cells/cells",
     "mp-cell": "weui-miniprogram/cell/cell",
     "mp-form-page": "weui-miniprogram/form-page/form-page",
