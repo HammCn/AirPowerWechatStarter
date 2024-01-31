@@ -1,5 +1,5 @@
 import { IJson } from "../../airpower/interface/IJson"
-import { UserEntity } from "../../model/role/UserEntity"
+import { UserEntity } from "../../model/user/UserEntity"
 import { UserService } from "../../model/user/UserService"
 
 

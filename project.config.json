@@ -6,7 +6,7 @@
   },
   "miniprogramRoot": "src/",
   "compileType": "miniprogram",
-  "projectname": "ts-sass-demo",
+  "projectname": "AirPowerWechatStarter",
   "setting": {
     "useCompilerPlugins": [
       "sass"
@@ -20,11 +20,12 @@
     "enhance": true,
     "minified": true,
     "postcss": true,
-    "condition": true
+    "condition": true,
+    "compileHotReLoad": true
   },
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {
-    "wxext14566970e7e9f62": "2.27.3-4"
+    "wxextd2e17127608c3": "2.27.3"
   },
   "condition": {},
   "srcMiniprogramRoot": "src/",

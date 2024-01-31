@@ -2,7 +2,7 @@ import { WechatEvent } from '../../../../typings/types'
 import { AirConfig } from '../../../airpower/config/AirConfig'
 import { AirFile } from '../../../airpower/helper/AirFile'
 import { AirHttp } from '../../../airpower/helper/AirHttp'
-import { UserEntity } from '../../../model/role/UserEntity'
+import { UserEntity } from '../../../model/user/UserEntity'
 import { UserService } from '../../../model/user/UserService'
 import { UserSexDictionary } from '../../../model/user/UserSexDictionary'
 

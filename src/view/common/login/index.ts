@@ -2,7 +2,7 @@
 
 import { AirConfig } from '../../../airpower/config/AirConfig'
 import { AirRouter } from '../../../airpower/helper/AirRouter'
-import { UserEntity } from '../../../model/role/UserEntity'
+import { UserEntity } from '../../../model/user/UserEntity'
 import { UserService } from '../../../model/user/UserService'
 
 Page({
