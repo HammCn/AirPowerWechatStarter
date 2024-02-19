@@ -1,8 +1,8 @@
 <view class="page">
   <view class="avatar">
-    <!-- <button open-type="chooseAvatar" bindchooseavatar="onAvatarChanged"> -->
+    <button open-type="chooseAvatar" bindchooseavatar="onAvatarChanged">
       <image src="{{headUrl}}" />
-    <!-- </button> -->
+    </button>
   </view>
   <view class="weui-cells">
     <view class="weui-cell weui-cell_input">
