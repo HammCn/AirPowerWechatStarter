@@ -18,7 +18,7 @@ Page({
     dto.account = this.data.email
     dto.nickName = '新用户'
     await UserService.create('注册中').register(dto)
-    await AirAlert.show('账号注册成功, 请妥善保管你的登录密码',"注册成功")
+    await AirAlert.show('注册成功', '账号注册成功, 请妥善保管你的登录密码')
     wx.navigateBack()
   },
   async onSendEmailCode() {
