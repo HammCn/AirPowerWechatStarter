@@ -17,7 +17,7 @@ Page({
     const dto = ResetPasswordDto.newInstance(this.data)
     dto.account = this.data.email
     await UserService.create('重置中').resetPassword(dto)
-    await AirAlert.show('密码重置成功, 请使用新密码重新登录', '重置成功')
+    await AirAlert.show('重置成功', '密码重置成功, 请使用新密码重新登录')
     wx.navigateBack()
   },
   async onSendEmailCode() {
