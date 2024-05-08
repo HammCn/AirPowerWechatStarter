@@ -1,5 +1,6 @@
 // const app = getApp<IAppOption>()
 
+import { AirApi } from '../../../airpower/config/AirApi'
 import { AirConfig } from '../../../airpower/config/AirConfig'
 import { AirRouter } from '../../../airpower/helper/AirRouter'
 import { UserEntity } from '../../../model/user/UserEntity'
@@ -11,7 +12,7 @@ Page({
     password: '',
   },
   onShow() {
-    wx.hideHomeButton()
+    AirApi.hideHomeButton()
   },
 
   async onLogin() {

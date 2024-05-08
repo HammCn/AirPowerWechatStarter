@@ -1,4 +1,5 @@
 import { WechatEvent } from '../../../../typings/types'
+import { AirApi } from '../../../airpower/config/AirApi'
 import { AirConfig } from '../../../airpower/config/AirConfig'
 import { AirFile } from '../../../airpower/helper/AirFile'
 import { AirHttp } from '../../../airpower/helper/AirHttp'
@@ -52,6 +53,6 @@ Page({
     const user = UserEntity.newInstance(this.data)
     console.log(user)
     await UserService.create('保存中').updateMyInfo(user)
-    wx.navigateBack()
+    AirApi.navigateBack()
   },
 })

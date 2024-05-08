@@ -1,3 +1,4 @@
+import { AirApi } from "../../airpower/config/AirApi"
 import { AirHttp } from "../../airpower/helper/AirHttp"
 import { IJson } from "../../airpower/interface/IJson"
 import { UserEntity } from "../../model/user/UserEntity"
@@ -24,12 +25,10 @@ Page({
     }
   },
   onPullDownRefresh() {
-    wx.stopPullDownRefresh()
+    AirApi.stopPullDownRefresh()
   },
   onGoToProfile() {
-    wx.navigateTo({
-      url: '../common/profile/index',
-    })
+    AirApi.navigateTo('../common/profile/index')
   },
   changeTab(e: IJson) {
     console.log("tab index " + e.detail)
@@ -72,9 +71,7 @@ Page({
       confirmText: '复制结果',
     })
     if (dialog.confirm) {
-      wx.setClipboardData({
-        data: res.result,
-      })
+      AirApi.setClipboardData(res.result)
     }
   },
 })
