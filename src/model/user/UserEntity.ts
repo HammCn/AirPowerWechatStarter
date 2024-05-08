@@ -1,5 +1,5 @@
 import {
-  ClassName, Dictionary, Type,
+  ClassName, Default, Dictionary, Type,
 } from '../../airpower/decorator/Custom'
 import { BaseEntity } from '../../base/BaseEntity'
 import { UserSexDictionary } from './UserSexDictionary'
@@ -42,4 +42,6 @@ export class UserEntity extends BaseEntity {
    * 角色信息
    */
   @Type(RoleEntity) role!: RoleEntity
+
+  @Default(2222) test!: number
 }

@@ -21,7 +21,6 @@ module.exports = {
   },
   extends: [
     'plugin:@typescript-eslint/recommended',
-    'plugin:vue/vue3-recommended',
     'airbnb-base',
   ],
   parserOptions: {

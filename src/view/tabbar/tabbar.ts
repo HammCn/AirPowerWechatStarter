@@ -1,7 +1,7 @@
+import { AirHttp } from "../../airpower/helper/AirHttp"
 import { IJson } from "../../airpower/interface/IJson"
 import { UserEntity } from "../../model/user/UserEntity"
 import { UserService } from "../../model/user/UserService"
-
 
 Page({
   data: {
@@ -37,7 +37,14 @@ Page({
       tabbarIndex: e.detail
     })
   },
-  onShow() {
+  async onShow() {
+    const user = new UserEntity(1)
+    console.log(user);
+    const json = await new AirHttp("user/getUserInfo").post(user)
+    console.log(json);
+    console.log("user", UserEntity.fromJson(json));
+
+
     setTimeout(async () => {
       try {
         const user = await UserService.create().getMyInfo(true)
