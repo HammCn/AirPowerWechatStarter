@@ -11,5 +11,6 @@ App<IAppOption>({
     AirConfig.login = () => {
       AirRouter.replace('common/login/index')
     }
+    
   },
 })

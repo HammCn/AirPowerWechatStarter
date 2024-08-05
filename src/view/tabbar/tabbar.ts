@@ -43,7 +43,6 @@ Page({
     console.log(json);
     console.log("user", UserEntity.fromJson(json));
 
-
     setTimeout(async () => {
       try {
         const user = await UserService.create().getMyInfo(true)

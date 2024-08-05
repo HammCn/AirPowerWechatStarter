@@ -1,12 +1,12 @@
 import {
-  ClassName, Default, Dictionary, Type,
+  Model, Default, Dictionary, Type,
 } from '../../airpower/decorator/Custom'
 import { BaseEntity } from '../../base/BaseEntity'
 import { UserSexDictionary } from './UserSexDictionary'
 import { RoleEntity } from '../role/RoleEntity'
 import { UserSex } from './UserSex'
 
-@ClassName('用户')
+@Model('用户')
 export class UserEntity extends BaseEntity {
   /**
    * 账号
