@@ -25,7 +25,8 @@
   },
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {
-    "wxextd2e17127608c3": "2.27.3"
+    "wxextd2e17127608c3": "2.27.3",
+    "wxext14566970e7e9f62": "2.27.3-4"
   },
   "condition": {},
   "srcMiniprogramRoot": "src/",
