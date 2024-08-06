@@ -1,4 +1,4 @@
-<view class="page">
+<a-body>
   <view class="avatar">
     <button open-type="chooseAvatar" bindchooseavatar="onAvatarChanged">
       <image src="{{headUrl}}" />
@@ -8,7 +8,7 @@
     <view class="weui-cell weui-cell_input">
       <view class="weui-cell__hd">昵称</view>
       <view class="weui-cell__bd">
-        <input model:value="{{nickName}}" class="weui-input" placeholder="起个好听的名字..."/>
+        <input model:value="{{nickName}}" class="weui-input" placeholder="起个好听的名字..." />
       </view>
     </view>
     <view class="weui-cell weui-cell_input">
@@ -24,4 +24,4 @@
       更新资料
     </button>
   </view>
-</view>
+</a-body>
