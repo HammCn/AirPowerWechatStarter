@@ -1,4 +1,4 @@
-<view class="page">
+<a-body>
   <mp-form-page title="找回密码" subtitle="如忘记密码, 可在此进行密码重置">
     <mp-form>
       <view class="weui-cells">
@@ -28,4 +28,4 @@
       </button>
     </view>
   </mp-form-page>
-</view>
+</a-body>
