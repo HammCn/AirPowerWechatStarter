@@ -26,6 +26,6 @@ Page({
   async onSendEmailCode() {
     const dto = MailSendDto.newInstance(this.data)
     await MailService.create('发送中').sendEmailCode(dto)
-    AirNotification.success("发送成功")
+    AirNotification.success('发送成功')
   },
 })

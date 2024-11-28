@@ -1,12 +1,13 @@
-import {
-  Model, Default, Dictionary, Type,
-} from '../../airpower/decorator/Custom'
 import { BaseEntity } from '../../base/BaseEntity'
 import { UserSexDictionary } from './UserSexDictionary'
 import { RoleEntity } from '../role/RoleEntity'
 import { UserSex } from './UserSex'
+import { Model } from '../../airpower/decorator/Model'
+import { Field } from '../../airpower/decorator/Field'
 
-@Model('用户')
+@Model({
+  label: '用户',
+})
 export class UserEntity extends BaseEntity {
   /**
    * 账号
@@ -36,12 +37,18 @@ export class UserEntity extends BaseEntity {
   /**
    * 性别
    */
-  @Dictionary(UserSexDictionary) sex!: UserSex
+  @Field({
+    dictionary: UserSexDictionary,
+  }) sex!: UserSex
 
   /**
    * 角色信息
    */
-  @Type(RoleEntity) role!: RoleEntity
+  @Field({
+    type: RoleEntity,
+  }) role!: RoleEntity
 
-  @Default(2222) test!: number
+  @Field({
+    default: 2222,
+  }) test!: number
 }

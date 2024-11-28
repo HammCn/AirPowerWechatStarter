@@ -7,7 +7,6 @@ import { UserEntity } from '../../../model/user/UserEntity'
 import { UserService } from '../../../model/user/UserService'
 import { UserSexDictionary } from '../../../model/user/UserSexDictionary'
 
-
 Page({
   data: {
     nickName: '',

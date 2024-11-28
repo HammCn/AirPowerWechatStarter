@@ -13,5 +13,4 @@ export const UserSexDictionary = AirDictionaryArray.create([
     key: UserSex.MALE,
     label: '男',
   },
-]
-)
+])

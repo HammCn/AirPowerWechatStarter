@@ -1,5 +1,4 @@
-import { UserEntity } from "./UserEntity";
-
+import { UserEntity } from './UserEntity'
 
 export class ResetPasswordDto extends UserEntity {
   code!: string

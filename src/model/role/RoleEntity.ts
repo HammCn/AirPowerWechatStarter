@@ -1,7 +1,12 @@
-import { Alias, FieldPrefix } from '../../airpower/decorator/Custom'
+import { Field } from '../../airpower/decorator/Field'
+import { Model } from '../../airpower/decorator/Model'
 import { BaseEntity } from '../../base/BaseEntity'
 
-@FieldPrefix('role_')
+@Model({
+  fieldPrefix: 'role_',
+})
 export class RoleEntity extends BaseEntity {
-  @Alias('name') roleName!: string
+  @Field({
+    label: 'name',
+  }) roleName!: string
 }
