@@ -50,7 +50,6 @@ Page({
   },
   async onModify() {
     const user = UserEntity.newInstance(this.data)
-    console.log(user)
     await UserService.create('保存中').updateMyInfo(user)
     AirApi.navigateBack()
   },

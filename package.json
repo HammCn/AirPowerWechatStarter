@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "Hamm",
   "private": true,
+  "main":"index.ts",
   "scripts": {
     "u": "sh update.sh",
     "m": "sh merge.sh"

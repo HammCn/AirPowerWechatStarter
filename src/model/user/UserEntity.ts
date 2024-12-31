@@ -2,8 +2,8 @@ import { BaseEntity } from '../../base/BaseEntity'
 import { UserSexDictionary } from './UserSexDictionary'
 import { RoleEntity } from '../role/RoleEntity'
 import { UserSex } from './UserSex'
-import { Model } from '../../airpower/decorator/Model'
 import { Field } from '../../airpower/decorator/Field'
+import { Model } from '../../airpower/decorator/Model'
 
 @Model({
   label: '用户',
@@ -47,8 +47,4 @@ export class UserEntity extends BaseEntity {
   @Field({
     type: RoleEntity,
   }) role!: RoleEntity
-
-  @Field({
-    default: 2222,
-  }) test!: number
 }
